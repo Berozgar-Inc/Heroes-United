@@ -89,6 +89,14 @@
     .w-webflow-badge {
       display: none !important
     }
+
+    /* Keep single-word section titles (Experiences, Cities) on one line and scale to fit. */
+    .large-title {
+      white-space: nowrap;
+      overflow-wrap: normal;
+      word-break: keep-all;
+      font-size: clamp(2.5rem, 13vw, 8rem);
+    }
   </style>
 </head>
 
