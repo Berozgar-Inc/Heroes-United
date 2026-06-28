@@ -81,10 +81,9 @@
         (n.className += t + "touch");
     })(window, document);
   </script>
-  <link href="https://cdn.prod.website-files.com/68711b2b9332a934a2b42342/687d089d14760f1928aa26a4_WarpFavicon.png"
-    rel="shortcut icon" type="image/x-icon" />
-  <link href="https://cdn.prod.website-files.com/68711b2b9332a934a2b42342/687d08a1d86e6514b70d7d36_WarpWebclip.png"
-    rel="apple-touch-icon" />
+  <link href="android-chrome-192x192.png" rel="icon" type="image/png" sizes="192x192" />
+  <link href="android-chrome-512x512.png" rel="icon" type="image/png" sizes="512x512" />
+  <link href="android-chrome-512x512.png" rel="apple-touch-icon" />
   <style>
     .w-webflow-badge {
       display: none !important
@@ -1650,77 +1649,6 @@
     })();
   </script>
   <script>(function () { function k() { var b = document.querySelectorAll(".w-webflow-badge"); for (var i = 0; i < b.length; i++)b[i].remove(); } if (document.readyState !== "loading") k(); else document.addEventListener("DOMContentLoaded", k); window.addEventListener("load", k); setTimeout(k, 500); setTimeout(k, 1500); setTimeout(k, 3000); })();</script>
-
-  <style>
-    .signup-fab {
-      position: fixed;
-      left: 50%;
-      bottom: 32px;
-      transform: translateX(-50%);
-      z-index: 9999;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px 40px;
-      border-radius: 9999px;
-      background: linear-gradient(135deg, rgba(225, 6, 0, 0.55), rgba(225, 6, 0, 0.25));
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      color: #fff;
-      font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      text-decoration: none;
-      -webkit-backdrop-filter: blur(12px) saturate(160%);
-      backdrop-filter: blur(12px) saturate(160%);
-      box-shadow:
-        0 0 24px 6px rgba(225, 6, 0, 0.6),
-        0 0 48px 16px rgba(225, 6, 0, 0.4),
-        inset 0 1px 1px rgba(255, 255, 255, 0.45),
-        inset 0 -2px 6px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-    }
-
-    .signup-fab:hover {
-      transform: translateX(-50%) translateY(-2px);
-      background: linear-gradient(135deg, rgba(225, 6, 0, 0.7), rgba(225, 6, 0, 0.35));
-      box-shadow:
-        0 0 32px 10px rgba(225, 6, 0, 0.85),
-        0 0 64px 22px rgba(225, 6, 0, 0.55),
-        inset 0 1px 1px rgba(255, 255, 255, 0.6),
-        inset 0 -2px 6px rgba(0, 0, 0, 0.25);
-    }
-
-    .signup-fab.is-hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transform: translateX(-50%) translateY(20px);
-    }
-
-    @media (max-width: 480px) {
-      .signup-fab { padding: 14px 32px; font-size: 14px; bottom: 20px; }
-    }
-  </style>
-  <a class="signup-fab" href="https://herosunited-signupform.vercel.app/" target="_blank" rel="noopener">Sign Up</a>
-  <script>
-    // Hide the floating Sign Up button once the "We're changing how fans..." section appears.
-    (function () {
-      function initSignupFab() {
-        var fab = document.querySelector('.signup-fab');
-        var section = document.getElementById('learn-more');
-        if (!fab || !section) return;
-        var observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            fab.classList.toggle('is-hidden', entry.isIntersecting);
-          });
-        }, { threshold: 0.1 });
-        observer.observe(section);
-      }
-      if (document.readyState !== 'loading') initSignupFab();
-      else window.addEventListener('DOMContentLoaded', initSignupFab);
-    })();
-  </script>
 </body>
 
 </html>
